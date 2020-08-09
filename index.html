@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Minusha</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+
+  <body>
+    <div id="loader"></div>
+    <section id="box" class="jumbotron">
+      <div class="conatiner px-4" id="left">
+        <div class="row">
+          <div class="col-lg-1 col-sm-2 text-center" >
+            <nav id="sidebar" class="active">
+              <h1><a href="index.html" class="logo "><i class="fab fa-houzz mt-3" style="color: white;"></i></a></h1>
+              <ul class="list-unstyled components ">
+                <li class="active">
+                  <a href="#"><i class="fas fa-home fa-2x my-2 " style="color: #340680;"></i></a>
+                </li>
+                <br>
+                <li>
+                    <a href="#"><i class="fa fa-search fa-2x my-2" style="color: #d3d3d3"></i> </a>
+                </li>
+                <br>
+                <li>
+                  <a href=""><i class="fa fa-bell fa-2x my-2" style="color: #d3d3d3"></i> </a>
+                </li>
+                <br>
+                <li>
+                  <a href="#"><i class="fa fa-cog fa-2x my-2" style="color: #d3d3d3"></i> </a>
+                </li>
+                <br>
+                <li>
+                  <a href="#"><i class="fa fa-clock fa-2x my-2" style="color: #d3d3d3"></i></a>
+                </li>
+              </ul>
+              <img src="./img/ts3.png" class="img_icon " style="margin-top: 6rem;">
+              </nav>
+          </div>
+
+          <div class="col-lg-11 col-sm-10 my-2 " id="right">
+            <div class="row ">
+              <div class="col-lg-8 card card1 my-1 mx-2">
+                <div class="my-3 mx-2">
+                  <h1>
+                    Hello ,<span class="font-weight-bold">Altamas Bari</span>
+                  </h1>
+                  <nav class="nav">
+                    <a class="nav-link disabled" href="#">Living Room</a>
+                    <a class="nav-link disabled" href="#">Bedroom</a>
+                    <a class="nav-link active" href="#">Kitchen</a>
+                    <a class="nav-link disabled" href="#">Hall</a>
+                  </nav>
+                  <div class="card-deck my-3">
+                    <div class="card">
+                      <div>
+                        <i
+                          class="fa fa-lightbulb fa-2x mt-2 ml-2 mr-5"
+                          aria-hidden="true"
+                        ></i>
+                        <label class="switch ml-5">
+                          <input type="checkbox" checked />
+                          <span class="slider round"></span>
+                        </label>
+                      </div>
+                      <div class="card-footer mt-5">Light</div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <i
+                          class="fa fa-lightbulb fa-2x mt-2 ml-2 mr-5"
+                          aria-hidden="true"
+                        ></i>
+                        <label class="switch ml-5">
+                          <input type="checkbox" />
+                          <span class="slider round"></span>
+                        </label>
+                      </div>
+                      <div class="card-footer mt-5">Curtains</div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <i
+                          class="fa fa-lightbulb fa-2x mt-2 ml-2 mr-5"
+                          aria-hidden="true"
+                        ></i>
+                        <label class="switch ml-5">
+                          <input type="checkbox" />
+                          <span class="slider round"></span>
+                        </label>
+                      </div>
+                      <div class="card-footer mt-5">Coffee</div>
+                    </div>
+                    <div class="card">
+                      <div>
+                        <i
+                          class="fa fa-lightbulb fa-2x mt-2 ml-2 mr-5"
+                          aria-hidden="true"
+                        ></i>
+                        <label class="switch ml-5">
+                          <input type="checkbox" />
+                          <span class="slider round"></span>
+                        </label>
+                      </div>
+                      <div class="card-footer mt-5">Fan</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h3>Schedule</h3>
+                    <nav class="nav">
+                      <a class="nav-link active" href="#">Week</a>
+                      <a class="nav-link disabled" href="#">Month</a>
+                      <a class="nav-link disabled" href="#">Year</a>
+                    </nav>
+                    <div class="card card2 mt-3">
+                      <div
+                        id="chartContainer"
+                        style="height: 240px; width: 100%;"
+                      ></div> 
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <h3>My devices</h3>
+                    <nav class="nav">
+                      <a class="nav-link disabled" href="#">Coffee Machine</a>
+                      <a class="nav-link active" href="#">Light</a>
+                      <a class="nav-link disabled" href="#">Registration</a>
+                    </nav>
+                    <div class="row">
+                      <div class="col-lg-5">
+                        <div class="card my-3 lamp1 justify-content-center align-items-center"><h5>Lamp 1</h5></div>
+                        <h5>Lamp 1</h5>
+                        <p>From To<br>
+                        16:00  21:00</p>
+                      </div>
+                      <div class="col-lg-5 my-3 card lamp2 justify-content-center align-items-center"><h5>Lamp 2 Lamp2</h5></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 card card3 my-1 mx-1 align-items-center">
+                <div class="my-3">
+                  <h3>Temperature</h3>
+                  <nav class="nav ml-3 h4">
+                    <a class="nav-link active" href="#">&deg; C</a>
+                    <a class="nav-link disabled" href="#">&deg; F</a>
+                  </nav>
+                </div>
+                <div class="card parent">
+                  <div
+                    class="card child align-items-center justify-content-center"
+                  >
+                    <p class="display-3">24&deg;</p>
+                  </div>
+                </div>
+                <p class="mt-4" style="color: #3e8fa3;">
+                  <span class="font-weight-bold">Normal</span> temp. for kitchen
+                  20-26 C &deg;
+                </p>
+                <div class="card history">
+                  <h3 class="my-3 text-center">History</h3>
+                  <ul class="list-group">
+                    <li class="list-group-item ">
+                      <img
+                        src="./img/ts3.png"
+                        class="img_icon mr-1"
+                        alt="user"
+                      />
+                      Justo odio <span class="mx-2">&#8226 Coffe</span>10:00
+                    </li>
+
+                    <li class="list-group-item ">
+                      <img
+                        src="./img/ts3.png"
+                        class="img_icon mr-1"
+                        alt="user"
+                      />
+                      Justo odio <span class="mx-2">&#8226 Lamp</span>10:00
+                    </li>
+                    <li class="list-group-item ">
+                      <img
+                        src="./img/ts3.png"
+                        class="img_icon mr-1"
+                        alt="user"
+                      />
+                      Justo odio <span class="mx-2">&#8226 Light</span>10:00
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col-lg-12 col-sm-10">
+                <i class="fas fa-backward mx-2"></i>
+                <i class="fas fa-pause mx-2"></i>
+                <i class="fas fa-forward mx-2"></i>
+                <img src="img/i8.jpg" class="img_icon rounded mx-2">
+                <span class="mx-3">Hands On</span>
+                <span class="slidecontainer mx-3">
+                  <input type="range" min="1" max="80" value="60" class="slider1" id="myRange">
+                </span>
+                <button type="button" class="btn mx-3" style="background-color:#f6c022;">Morning</button>
+                <button type="button" class="btn mx-3" style="background-color: palevioletred;" >Evening</button>
+                <button type="button" class="btn mx-3" style="background-color: #243cc1;">Night</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+          var loader;
+
+      function loadNow(opacity) {
+          if (opacity <= 0) {
+              displayContent();
+          } else {
+              loader.style.opacity = opacity;
+              window.setTimeout(function() {
+                  loadNow(opacity - 0.05);
+              }, 50);
+          }
+      }
+
+      function displayContent() {
+          loader.style.display = 'none';
+          document.getElementById('content').style.display = 'block';
+      }
+
+      document.addEventListener("DOMContentLoaded", function() {
+          loader = document.getElementById('loader');
+          loadNow(1);
+      });
+    </script>
+    <script src="./chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> 
+  </body>
+</html>
